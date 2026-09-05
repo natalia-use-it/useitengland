@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Workshops | USE-IT England</title>
+    
+    <!-- STANDARD SEO METADATA -->
+    <meta name="description" content="Join USE-IT England for local mapping workshops, secret city tours, and community events.">
+    <meta name="author" content="MIND THE MAP CIC">
+    <link rel="canonical" href="https://use-it.uk/events/">
+    
+    <!-- EXTERNAL STYLESHEET -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../" class="logo-placeholder" style="text-decoration: none;">
+                <img src="../img/useitlogo.png" alt="USE-IT Logo" style="max-width: 120px;" />
+                <span style="background-color: var(--accent); color: var(--dark); padding: 2px 6px; border-radius: 4px; font-size: 12px; font-weight: 900;">ENGLAND</span>
+            </a>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links-list">
+                <li><a href="../#about">About</a></li>
+                <li><a href="#upcoming">Upcoming Events</a></li>
+                <li><a href="#signup">Get Notified</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero section-padding">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Local Workshops & <span>Community Events</span></h1>
+                <p>Want to help map your city, meet fellow creators, or take part in alternative urban walks? Check out our upcoming sessions below.</p>
+                <a href="#upcoming" class="btn">View Events</a>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-frame">
+                    <img src="../img/hero_section.webp" alt="USE-IT Event" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- UPCOMING EVENTS SECTION -->
+    <section class="production-section section-padding" id="upcoming">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <p class="section-subtitle">Grab a spot via Eventbrite. All our local workshops and walks are free to join.</p>
+            
+            <div class="maps-grid">
+                <!-- EVENT CARD 1 -->
+                <article class="map-card">
+                    <div>
+                        <span class="map-badge">London Mapping Party</span>
+                        <h3>Urban Co-Lab: Square Mile Mapping Workshop</h3>
+                        <p>Join us for a lunchtime workshop in London's financial heart and connect with local community.</p>
+                        
+                        <div class="event-meta">
+                            <span>📅 Sat, Sep 26</span>
+                            <span>📍 London EC1V</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://eventbrite.com/your-event-link" target="_blank" rel="noopener" class="btn" style="width: 100%; text-align: center; margin-top: 16px;">
+                            Reserve Spot on Eventbrite ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- EVENT CARD 2 -->
+                <article class="map-card">
+                    <div>
+                        <span class="map-badge">Square Mile After Work Drinks</span>
+                        <h3>Urban Co-Lab: Square Mile Mapping Workshopg</h3>
+                        <p>Help shape the official City of London USE-IT map! Bring your favorite local spots, coffee shops, and stories to our mapping table.</p>
+                        
+                        <div class="event-meta">
+                            <span>📅 Tue, Oct xx</span>
+                            <span>📍 London EC1V</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://eventbrite.com/your-event-link" target="_blank" rel="noopener" class="btn" style="width: 100%; text-align: center; margin-top: 16px;">
+                            Reserve Spot on Eventbrite ↗
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GENERAL SIGN UP SECTION -->
+    <section class="contact-section section-padding" id="signup">
+        <div class="container contact-container">
+            <h2 style="text-align: center; font-size: 38px; font-weight: 900; text-transform: uppercase; margin-bottom: 12px;">Never Miss An Event</h2>
+            <p class="section-subtitle">Sign up with interest to get pinged when we drop new event.</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="3e6623bc-6b92-4109-b5a0-05739a0efe96">
+                <input type="hidden" name="subject" value="New General Event Signup">
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Your City</label>
+                    <input type="text" id="city" name="city" placeholder="e.g. London, Oxford, Manchester">
+                </div>
+
+                <button type="submit" class="btn form-submit-btn">Keep Me Updated</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- HIDDEN PAST EVENTS SECTION 
+        <section class="network-section section-padding" id="past-events" style="display: none;">
+            <div class="container">
+                <h2>Past Events</h2>
+                <p>Archive of our previous walks and mapping jams.</p>
+            </div>
+        </section>
+    -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="publisher-info">
+                <h4>USE-IT England</h4>
+                <p>Published by <strong>MIND THE MAP CIC</strong></p>
+                <p>Publisher of USE-IT Maps in England and Wales</p>
+                <p style="margin-top: 16px; opacity: 0.5; font-size: 13px;">124 City Road, London, EC1V 2NX</p>
+            </div>
+            <div class="footer-logos">
+                <img src="../img/mind_the_map_logo.png" alt="Mind The Map CIC Logo" style="max-width: 150px;" />
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MIND THE MAP CIC</p>
+        </div>
+    </footer>
+
+    <!-- CENTRALIZED JS SCRIPT -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

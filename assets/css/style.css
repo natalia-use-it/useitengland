@@ -197,6 +197,35 @@ img {
     object-position: center;
 }
 
+/* Events hero: text on top, wide landscape poster spanning full width below */
+.events-hero-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.events-hero-stacked .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-banner {
+    width: 100%;
+    border: 3px solid var(--dark);
+    border-radius: var(--radius-playful);
+    box-shadow: 8px 8px 0px var(--dark);
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.hero-banner-img {
+    display: block;
+    width: 100%;
+    height: auto; /* true 3240x1620 (2:1) ratio, no crop or distortion */
+}
+
 .photo-credit {
     position: absolute;
     bottom: 12px;
@@ -645,8 +674,72 @@ footer {
     }
 }
 
+.maps-grid.single-event {
+    grid-template-columns: minmax(0, 640px);
+    justify-content: center;
+}
+
+.date-choice {
+    margin: 24px 0;
+}
+
+.date-choice-label {
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
+.date-options {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.date-option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 3px solid var(--dark);
+    border-radius: var(--radius-sm);
+    box-shadow: 4px 4px 0px var(--dark);
+    padding: 12px 18px;
+    transition: var(--transition);
+}
+
+.date-option:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--accent);
+}
+
+.date-option-day {
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.date-option-time {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.date-option-or {
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #666;
+}
+
 .event-meta {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     font-weight: 800;
     font-size: 14px;
